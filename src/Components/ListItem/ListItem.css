@@ -1,0 +1,21 @@
+.lite-item{
+    width: 135px;
+    height: 40px;
+    background-color: blueviolet;
+    margin-top: 10px;
+    list-style: none;
+}
+.radio-container{
+    display: inline-block;
+}
+.lbl-container{
+    display: inline-block;
+}
+.radio-box{
+    width: 20px;
+    height: 20px;
+}
+.radio-lbl{
+    color: white;
+    font-size: 15px;
+}

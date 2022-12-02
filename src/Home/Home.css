@@ -1,0 +1,26 @@
+.App {
+    background-color: #282c34;
+}
+.panels-container{
+    width: 100%;
+    height: 705px;
+    display: flex;
+}
+.left-pane-container{
+    width: 30%;
+    height: 100%;
+    background-color: blueviolet;
+    display: inline-block;
+}
+.right-pane-container{
+    width: 30%;
+    height: 100%;
+    background-color: chocolate;
+    display: inline-block;
+}
+.main-pane-container{
+    width: 40%;
+    height: 100%;
+    background-color: tomato;
+    display: inline-block;
+}
