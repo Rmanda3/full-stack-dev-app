@@ -7,6 +7,7 @@ export type Props = {
 
 const ListItem: React.FC<Props> = (listData:Props) => {
   const [rchecked, serRchecked] = useState(false);
+
   const handlerDown = (event: React.KeyboardEvent<HTMLInputElement>, rName: string) => {
     console.log("handlerDown->", event.key);
     if (event.key === "F1") {
@@ -15,14 +16,14 @@ const ListItem: React.FC<Props> = (listData:Props) => {
     event.preventDefault();
     event.stopPropagation()
     }else{
-      console.log('else executing')
+      const data = "test";
     }
   };
 
   const radioHandler = () => {
-    console.log("radioHandler->", rchecked);
-    // serRchecked(true);
+    const data = "test";
   };
+
   return (
     <div className="lite-item">
       <div className="radio-container">

@@ -1,1 +1,15 @@
-node_modules
+node_modules/
+build/
+coverage/
+.nyc_output
+dist/
+package-lock.json
+.idea/
+.vscode/
+.settings/
+.classpath
+.project
+*.log
+*.tgz
+yarn.lock
+

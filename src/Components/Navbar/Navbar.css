@@ -1,7 +1,8 @@
 .nav-bar {
-    background-color: brown;
+    background-color: #4A148C;
+    color: #FFFFFF;
 }
 .nav-bar h1{
-    padding: 0;
+    padding: 15px;
     margin: 0;
 }

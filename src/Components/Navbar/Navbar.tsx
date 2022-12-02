@@ -5,7 +5,7 @@ const Navbar: React.FC = ()=>{
 
     return(
     <div className="nav-bar">
-        <h1>Navigation Bar</h1>
+        <h1>Technology of Science</h1>
     </div>
     );
 
