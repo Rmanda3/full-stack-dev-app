@@ -1,26 +1,42 @@
-import React from "react"
-import logo from '../logo.svg';
+import React, { useState } from "react";
+import logo from "../logo.svg";
+import Navbar from "../Components/Navbar";
+import ListItem from "../Components/ListItem/ListItem";
+import "./Home.css";
 
-export type Props = {
+export type Props = {};
 
-};
+const Home: React.FC<Props> = ({}) => {
+  const listData = ["one", "two", "three"];
 
-const Home: React.FC<Props> = ({})=>{
-    return (<div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-       Hello World!
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header>
-  </div>);
+  return (
+    <div className="App">
+      <Navbar />
+      <div className="panels-container">
+        <div className="left-pane-container">
+          <form>
+            <label>
+              Name1: <input type="radio" />
+            </label>
+            <label>
+              Name2: <input type="radio" />
+            </label>
+            <label>
+              Name3: <input type="radio" />
+            </label>
+            <label>
+              Name4: <input type="radio" />
+            </label>
+          </form>
+        </div>
+        <div className="main-pane-container"></div>
+        <div className="right-pane-container">
+          {listData.map((itemData) => (
+            <ListItem dataItem={itemData} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };
 export default Home;

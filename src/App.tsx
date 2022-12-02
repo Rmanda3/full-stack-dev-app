@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import HomeView from './Home';
+import Home from './Home';
 
 const App:React.FC = ()=> {
-  return (<HomeView/>);
+  return (<Home/>);
 }
 
 export default App;
